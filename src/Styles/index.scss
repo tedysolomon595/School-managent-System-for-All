@@ -1,0 +1,26 @@
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+    --text-light: rgba(0, 0, 0, 0.5);
+    --important-color: rgb(255, 0, 86);
+    --shadow-color: #abb8c3;
+    --link-color: #fff;
+    --animation-speed: 1;
+}
+
+@function animationDelay($duration:number) {
+    @return calc(var(--animation-speed)*$duration)
+}
+
+@import './StyleSections/animation.scss';
+@import './StyleSections/Footer.scss';
+@import './StyleSections/login.scss';
+@import './StyleSections/Navbar.scss';
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Gill Sans", sans-serif;
+}
